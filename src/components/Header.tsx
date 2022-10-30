@@ -12,7 +12,7 @@ export function Header() {
     <header className="w-screen fixed">
       <div className="container h-14 w-full flex items-center">
         <button
-          className="w-[60px] h-[40px] relative my-7 cursor-pointer items-center scale-50 md:hidden z-50"
+          className="w-[60px] h-[40px] relative my-7 cursor-pointer items-center scale-50 lg:hidden z-50"
           aria-label="menu"
           onClick={handleMenuClick}
         >
