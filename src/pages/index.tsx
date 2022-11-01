@@ -11,9 +11,9 @@ export default function Home() {
     <Page title="Monito | Home" description="A website for selling pets and pet related products">
       <div className="w-screen h-screen">
         <Header />
-        <section className="bg-secondary-400 bg-[url(/assets/images/hero-banner.png)] bg-[bottom_right_-129px] bg-mobile bg-no-repeat rounded-b-[20px]">
-          <div className="container pt-14 h-[90vh]">
-            <div className="mt-8">
+        <section className="bg-secondary-400 bg-mobile-image md:bg-desktop-image md:max-h-[764px] bg-mobile-position bg-mobile-size md:bg-desktop-size md:bg-desktop-position xl: bg-no-repeat rounded-b-[20px]">
+          <div className="container pt-14 lg:pt-[100px] h-[90vh] md:h-[55vh] lg:h-[70vh]">
+            <div className="mt-8 lg:mt-20">
               <div className="text-primary-800 mb-3">
                 <h1 className="text-[46px] font-extrabold capitalize lg:text-6xl">
                   One more friend
@@ -23,7 +23,7 @@ export default function Home() {
                   Thousands more fun!
                 </span>
               </div>
-              <p className="text-neutral-800 text-xs font-medium">
+              <p className="text-neutral-800 text-xs lg:text-base font-medium md:w-1/2 lg:w-2/5">
                 Having a pet means you have more joy, a new friend, a happy person who will always
                 be with you to have fun. We have 200+ different pets that can meet your needs!
               </p>
@@ -66,6 +66,7 @@ export default function Home() {
                   gene: "Male",
                   age: "1 year",
                 }}
+                productType="dog"
               />
             </li>
             <li>
@@ -77,6 +78,7 @@ export default function Home() {
                   gene: "Male",
                   age: "1 year",
                 }}
+                productType="dog"
               />
             </li>
             <li>
@@ -88,6 +90,7 @@ export default function Home() {
                   gene: "Male",
                   age: "1 year",
                 }}
+                productType="dog"
               />
             </li>
             <li>
@@ -99,6 +102,7 @@ export default function Home() {
                   gene: "Male",
                   age: "1 year",
                 }}
+                productType="dog"
               />
             </li>
             <li>
@@ -110,6 +114,7 @@ export default function Home() {
                   gene: "Male",
                   age: "1 year",
                 }}
+                productType="dog"
               />
             </li>
             <li>
@@ -121,6 +126,7 @@ export default function Home() {
                   gene: "Male",
                   age: "1 year",
                 }}
+                productType="dog"
               />
             </li>
           </ul>
@@ -190,6 +196,133 @@ export default function Home() {
                 className="mx-auto"
               />
             </div>
+          </div>
+        </section>
+        <section className="container my-10 hidden md:flex flex-col">
+          <div className="flex flex-col">
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="font-medium text-sm text-black">
+                  Hard to choose right products for your pets?
+                </span>
+                <h3 className="font-bold text-xl text-primary-base capitalize">Our Products</h3>
+              </div>
+              <Button variant="normal">
+                <span>View more</span>
+                <div className="w-6 h-6 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="7"
+                    height="10"
+                    fill="none"
+                    viewBox="0 0 7 10"
+                  >
+                    <path
+                      fill="#003459"
+                      d="M2.207.293A1 1 0 00.793 1.707L2.207.293zM5.5 5l.707.707a1 1 0 000-1.414L5.5 5zM.793 8.293a1 1 0 001.414 1.414L.793 8.293zm0-6.586l4 4 1.414-1.414-4-4L.793 1.707zm4 2.586l-4 4 1.414 1.414 4-4-1.414-1.414z"
+                    ></path>
+                  </svg>
+                </div>
+              </Button>
+            </div>
+            <ul className="mt-5 lg:mt-7 grid grid-cols-1 gap-3 md:grid-cols-3 lg:grid-cols-4 lg:gap-5">
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+              <li>
+                <ProductCard
+                  image="/assets/images/product-image-1.png"
+                  title="Dog Diet You Need To Know"
+                  price={20}
+                  tags={{
+                    product: "Dog food",
+                    size: "385gm",
+                  }}
+                  productType="product"
+                />
+              </li>
+            </ul>
           </div>
         </section>
         <section className="container my-10 lg:my-[60px] hidden lg:flex flex-col">

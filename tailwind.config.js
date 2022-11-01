@@ -14,10 +14,17 @@ module.exports = {
         padding: "1rem",
       },
       backgroundSize: {
-        auto: "auto",
-        cover: "cover",
-        contain: "contain",
-        mobile: "927px",
+        ["mobile-size"]: "auto",
+        ["desktop-size"]: "cover",
+      },
+      backgroundPosition: {
+        ["mobile-position"]: "bottom center, left top, right 90px top 112px",
+        ["desktop-position"]: "24% 0%",
+      },
+      backgroundImage: {
+        ["mobile-image"]:
+          "url('/assets/images/hero-image-component.png'), url(/assets/images/hero-cube-image.png), url(/assets/images/hero-mini-cube-image.png)",
+        ["desktop-image"]: "url('/assets/images/hero-bg-desktop.png')",
       },
       colors: {
         primary: {
