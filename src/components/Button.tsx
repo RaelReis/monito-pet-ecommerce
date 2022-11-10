@@ -7,7 +7,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const VARIANT_STYLE = {
   normal:
     "py-3 px-7 text-primary-base ring ring-primary-base rounded-full font-medium flex justify-center items-center gap-2",
-  fill: "py-3 px-7 bg-primary-base text-neutral-100 ring ring-primary-base rounded-full font-medium flex justify-center items-center gap-2",
+  fill: "py-3 px-7 bg-primary-base text-neutral-100 border-4 border-primary-base rounded-full font-medium flex justify-center items-center gap-2",
 };
 
 export function Button({ variant = "normal", children, className, ...props }: ButtonProps) {

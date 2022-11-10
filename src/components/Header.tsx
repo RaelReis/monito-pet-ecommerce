@@ -81,7 +81,7 @@ export function Header() {
             </ul>
           </nav>
         </div>
-        <div className="order-3 lg:relative lg:ml-9 lg:w-full lg:flex lg:items-center lg:gap-4">
+        <div className="w-[60px] h-[40px] flex items-center justify-center order-3 lg:relative lg:ml-9 lg:w-full lg:flex lg:items-center lg:gap-4">
           <input
             type="text"
             placeholder="Search something here!"
